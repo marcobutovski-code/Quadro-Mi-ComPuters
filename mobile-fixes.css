@@ -1,0 +1,6 @@
+/* Final mobile arrow cleanup */
+.card-bottom b{font-size:0!important;display:grid!important;place-items:center;width:34px;height:34px;border:1px solid #93d12466;border-radius:50%;color:#b8ef56;line-height:1;position:absolute;right:18px;bottom:18px}
+.card-bottom b:before{content:'';width:12px;height:2px;background:currentColor;display:block;grid-area:1/1;transform:rotate(-45deg);transform-origin:right center}
+.card-bottom b:after{content:'';width:7px;height:7px;border-top:2px solid currentColor;border-right:2px solid currentColor;display:block;grid-area:1/1;transform:translate(4px,-3px)}
+.button span,.bag b,.map-arrow{font-size:0!important}
+@media(max-width:620px){.card-bottom b{width:32px;height:32px;right:16px;bottom:16px}.card-bottom b:before{width:11px}.card-bottom b:after{width:6px;height:6px;transform:translate(3px,-3px)}}
