@@ -1,0 +1,1 @@
+Trigger Vercel redeploy for the newly uploaded transparent PNG logo.
