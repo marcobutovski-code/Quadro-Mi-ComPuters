@@ -1,0 +1,40 @@
+.nav nav a,
+.nav .bag {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  line-height: 1;
+}
+
+.nav nav a {
+  color: #d5d8d0;
+  padding: 8px 0;
+  transition: color .25s ease, transform .25s ease;
+}
+
+.nav nav a:hover {
+  color: #f5f6f2;
+  transform: translateY(-1px);
+}
+
+.nav .bag {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  padding: 12px 14px 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav .bag b {
+  margin-left: 8px;
+}
+
+@media (max-width: 620px) {
+  .nav .bag {
+    font-size: 11px;
+    padding: 10px 11px 10px 13px;
+  }
+}
