@@ -1,15 +1,16 @@
-/* Premium vector arrows — SVG mask, no emoji glyphs */
-.button span,.bag b,.text-link span,.map-arrow,.card-bottom b{font-size:0!important;position:relative;display:inline-grid;place-items:center}
-.button span::before,.bag b::before,.text-link span::before,.map-arrow::before,.card-bottom b::before{content:'';position:absolute;width:16px;height:16px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 13 13 3M6 3h7v7' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 13 13 3M6 3h7v7' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
-.button span{width:34px!important;height:34px!important;flex:0 0 34px;overflow:hidden}
-.button span::before{width:17px;height:17px}
-.bag b{width:32px!important;height:32px!important;flex:0 0 32px;margin-left:7px!important;padding:0!important;border-radius:50%;background:var(--green);color:#111}
-.bag b::before{width:17px;height:17px}
-.text-link span{width:17px!important;height:17px!important;margin-left:10px!important;color:var(--green);vertical-align:-3px}
-.text-link span::before{width:15px;height:15px}
-.map-arrow{width:18px!important;height:18px!important;margin-left:4px;color:var(--green)}
-.map-arrow::before{width:14px;height:14px}
-.card-bottom b{width:34px!important;height:34px!important;flex:0 0 34px;border:1px solid #93d12466;border-radius:50%;color:#b8ef56;background:transparent;overflow:hidden;transition:transform .25s ease,border-color .25s ease,background .25s ease}
-.card-bottom b::before{width:17px;height:17px}
-.card:hover .card-bottom b{transform:translateY(-2px);border-color:#93d124aa;background:#172011}
-@media(max-width:620px){.button span{width:34px!important;height:34px!important}.bag b{width:30px!important;height:30px!important;flex-basis:30px}.card-bottom b{width:34px!important;height:34px!important;flex-basis:34px}}
+/* Final premium arrows — clean SVG icon, no Unicode/emoji */
+.button span,.bag b,.text-link span,.map-arrow,.card-bottom b{font-size:0!important;position:relative;display:inline-grid!important;place-items:center;background-repeat:no-repeat!important;background-position:center!important}
+.button span::before,.button span::after,.bag b::before,.bag b::after,.text-link span::before,.text-link span::after,.map-arrow::before,.map-arrow::after,.card-bottom b::before,.card-bottom b::after{content:none!important;display:none!important}
+
+.button span{width:34px!important;height:34px!important;flex:0 0 34px;overflow:hidden;border:1px solid #93d12466!important;border-radius:50%;background-color:transparent!important;background-size:18px 18px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19L19 5M9 5H19V15' fill='none' stroke='%23b8ef56' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important}
+
+.bag b{width:32px!important;height:32px!important;flex:0 0 32px;margin-left:7px!important;padding:0!important;border-radius:50%;background-color:var(--green)!important;background-size:18px 18px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19L19 5M9 5H19V15' fill='none' stroke='%2310150f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important}
+
+.text-link span{width:17px!important;height:17px!important;margin-left:10px!important;color:transparent!important;background-size:14px 14px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5V19M6 13L12 19L18 13' fill='none' stroke='%23b8ef56' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important}
+
+.map-arrow{width:18px!important;height:18px!important;margin-left:4px;color:transparent!important;background-size:15px 15px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19L19 5M9 5H19V15' fill='none' stroke='%2393d124' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important}
+
+.card-bottom b{width:34px!important;height:34px!important;min-width:34px!important;flex:0 0 34px;border:1px solid #93d12466!important;border-radius:50%!important;color:transparent!important;background-color:transparent!important;background-size:18px 18px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19L19 5M9 5H19V15' fill='none' stroke='%23b8ef56' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;transition:transform .25s ease,border-color .25s ease,background-color .25s ease}
+.card:hover .card-bottom b{transform:translateY(-2px);border-color:#93d124aa!important;background-color:#172011!important}
+
+@media(max-width:620px){.button span{width:34px!important;height:34px!important;flex-basis:34px}.bag b{width:30px!important;height:30px!important;flex-basis:30px;background-size:17px 17px!important}.card-bottom b{width:34px!important;height:34px!important;min-width:34px!important;flex-basis:34px;background-size:17px 17px!important}}
